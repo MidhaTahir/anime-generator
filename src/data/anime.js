@@ -1,4 +1,4 @@
-export const POKEMON_ATTRIBUTES = {
+export const ANIME_ATTRIBUTES = {
   appearance: 'Appearance',
   attack: {
     name: 'Name',
@@ -24,7 +24,7 @@ export const POKEMON_ATTRIBUTES = {
 };
 // Sample Data
 // 
-// export const POKEMON_ATTRIBUTES = {
+// export const ANIME_ATTRIBUTES = {
 //   appearance: 'Floramander has red and yellow scales with petals for armor. Flames cover its tail and it carries a small bouquet of flowers in its mouth.',
 //   attack: {
 //     name: 'Floral Strike',
@@ -49,7 +49,7 @@ export const POKEMON_ATTRIBUTES = {
 //   weightPounds: 35
 // };
 
-export const POKEMON_TYPES = {
+export const ANIME_TYPES = {
   default: {
     color: '#ffffff',
     Icon: () => (

@@ -1,15 +1,15 @@
-import { POKEMON_TYPES, POKEMON_ATTRIBUTES }  from '@/data/pokemon';
+import { ANIME_TYPES, ANIME_ATTRIBUTES }  from '@/data/anime';
 
 import styles from './Card.module.scss';
 
-const Card = ({ attributes = POKEMON_ATTRIBUTES, image = {} }) => {
+const Card = ({ attributes = ANIME_ATTRIBUTES, image = {} }) => {
   const type = attributes.type?.toLowerCase();
   const weakness = attributes.weakness?.toLowerCase();
   const resistance = attributes.resistance?.toLowerCase();
 
-  const { Icon: IconType, color: colorType } = POKEMON_TYPES[type] || POKEMON_TYPES['default'];
-  const { Icon: IconWeakness, color: colorWeakness } = POKEMON_TYPES[weakness] || POKEMON_TYPES['default'];
-  const { Icon: IconResistance, color: colorResistance } = POKEMON_TYPES[resistance] || POKEMON_TYPES['default'];
+  const { Icon: IconType, color: colorType } = ANIME_TYPES[type] || ANIME_TYPES['default'];
+  const { Icon: IconWeakness, color: colorWeakness } = ANIME_TYPES[weakness] || ANIME_TYPES['default'];
+  const { Icon: IconResistance, color: colorResistance } = ANIME_TYPES[resistance] || ANIME_TYPES['default'];
   
   return (
     <div className={styles.card}>
@@ -35,7 +35,7 @@ const Card = ({ attributes = POKEMON_ATTRIBUTES, image = {} }) => {
           {image?.url && <img src={image.url} />}
         </span>
         <span className={styles.cardAttributes}>
-          { attributes?.category } Pokemon. Ht: { attributes?.lengthInches }&quot;, WT: {attributes?.weightPounds?.toFixed(2)} lbs.
+          { attributes?.category } Anime. Ht: { attributes?.lengthInches }&quot;, WT: {attributes?.weightPounds?.toFixed(2)} lbs.
         </span>
         <span className={styles.cardPower}>
           <strong>{ attributes?.attack?.name }</strong> { attributes?.attack?.description }
