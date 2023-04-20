@@ -1,7 +1,15 @@
-# Demo Pokémon Generator Starter
+# Key Highlights of Animé Generator
+
+Built this quick fun project to understand the usage of ChatGPT and DALL-E APIs
+
+# How to Run this project
 
 ```
-yarn create next-app -e https://github.com/colbyfayock/demo-pokemon-generator-starter
-# or
-npx create-next-app -e https://github.com/colbyfayock/demo-pokemon-generator-starter
+Make .env file and copy paste your own openAI Key
+
+Check .env.example
 ```
+
+# Screenshot of WebApp
+
+![AnimeGenerator](./anime-generator.jpg)
